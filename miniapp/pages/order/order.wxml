@@ -1,0 +1,23 @@
+<view class="order">
+  <view class="order_items"
+  wx:for="{{order}}"
+  wx:key="gid"
+  >
+    <view class="order_num">
+      <view>订单编号</view>
+      <view>{{item.order_num}}</view>
+    </view>
+    <view class="order_price">
+      <view>订单价格</view>
+      <view class="price">￥ {{item.price}}</view>
+    </view>
+    <view class="order_name">
+      <view>商品名称</view>
+      <view>{{item.name}} X {{item.num}}</view>
+    </view>
+    <view class="order_date">
+      <view>订单日期</view>
+      <view>{{item.time}}</view>
+    </view>
+  </view>
+</view>

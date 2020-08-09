@@ -1,0 +1,105 @@
+page{
+  padding-bottom: 90rpx;
+}
+.receive_address{
+  padding: 20rpx;
+  border-bottom: 1rpx solid red;
+}
+.userDetail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20rpx;
+}
+.userDetail .userName{
+  flex: 5;
+}
+.userName{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userDetail .address{
+  flex: 3;
+  text-align: left;
+}
+
+.paycar_content .paycar_item{
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1rpx solid black;
+}
+.paycar_item .goods_img{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods_img image{
+  width: 80%;
+}
+.paycar_item .goods_info{
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.goods_info .goods_name{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #666;
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+}
+.price .goods_price{
+  color: red;
+  font-size: 34rpx;
+}
+.price .goods_count{
+  display: flex;
+}
+.goods_count .count{
+  display: flex;
+  width: 55rpx;
+  height: 55rpx;
+  justify-content: center;
+  align-items: center;
+}
+.bottom_tool{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: white;
+  display: flex;
+  border-top: 1rpx solid red;
+  border-bottom: 1rpx solid black;
+}
+.bottom_tool .total_price{
+  flex: 5;
+  text-align: right;
+  padding-right: 15rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.total_price .price text{
+  color: red;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.bottom_tool .pay{
+  flex: 3;
+  background-color: red;
+  color: white;
+  font-size: 32rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

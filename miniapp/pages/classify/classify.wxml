@@ -1,0 +1,43 @@
+<view class="classify">
+  <SearchInput msgList="{{msgList}}"></SearchInput>
+  <view class="container">
+    <!-- 左侧导航 -->
+    <scroll-view scroll-y class="left_menu">
+      <view class="menu_item {{index===leftMenuIndex?'active':''}}"
+      wx:for="{{leftMenuList}}"
+      wx:key="*this"
+      bindtap="changeMenu"
+      data-index="{{index}}"
+      >
+      {{item}}
+      </view>
+    </scroll-view>
+    <!-- 右侧分类 -->
+    <scroll-view scroll-top="{{scrolltop}}" scroll-y class="right_content" >
+      <view class="prodcut_group"
+      wx:for="{{rightContent}}"
+      wx:for-index="index1"
+      wx:for-item="item1"
+      wx:key="sid"
+      >
+        <view class="product_stype">
+          <text class="dot">/</text>
+          <text class="stype">{{item1.stype}}</text>
+          <text class="dot">/</text>
+        </view>
+        <view class="product_list">
+          <navigator
+          wx:for="{{item1.list}}"
+          wx:for-index="index2"
+          wx:for-item="item2"
+          wx:key="tid"
+          url="/pages/goodlists/goodlists?tid={{item2.tid}}&tstype={{item2.tstype}}"
+          >
+          <image mode="aspectFit" src="{{item2.icon}}"></image>
+          <view class="product_name">{{item2.tstype}}</view>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

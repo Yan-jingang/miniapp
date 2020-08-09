@@ -1,0 +1,23 @@
+<view class="search">
+  <input placeholder="{{placeholder}}" value="{{confirmContent}}"
+  bindinput="Input"
+  bindconfirm="confirm"
+  >
+  </input>
+  <view
+  class="btn" 
+  hidden="{{isFocus}}" 
+  bindtap="cancel">
+    <view>取消</view>
+    <button></button>
+  </view>
+</view>
+<view class="searchResult">
+  <navigator class="result_item"
+  wx:for="{{goods}}"
+  wx:key="gid"
+  url="/pages/detail/detial?gid={{item.gid}}"
+  >
+    {{item.name}}
+  </navigator> 
+</view>

@@ -1,0 +1,81 @@
+<view class="detail_swiper">
+  <swiper
+    autoplay
+    circular
+    indicator-dots
+  >
+    <swiper-item
+    wx:for="{{img}}"
+    wx:key="img_id"
+    bindtap="prevewImg"
+    data-url="{{item.path}}"
+    >
+      <image mode="widthFix" src="{{item.path}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="goods_price">￥ {{goods.price}}</view>
+<view class="goods_row">
+  <view class="goods_name">{{goods.name}}</view>
+  <view class="collect" bindtap="collect">
+    <text class="iconfont {{iscollected?'icon-shoucang':'icon-shoucang1'}}"></text>
+    <view class="collect_text">收藏</view>
+  </view>
+</view>
+
+<view class="buttom_tool">
+  <view class="tool_item">
+    <view class="iconfont icon-kefu"></view>
+    <view>客服</view>
+    <button open-type="contact"></button>
+  </view>
+  <view class="tool_item">
+    <view class="iconfont icon-fenxiang"></view>
+    <view>分享</view>
+    <button open-type="share"></button>
+  </view>
+  <navigator class="tool_item" url="/pages/car/car" open-type="switchTab">
+    <view class="iconfont icon-gouwuche-"></view>
+    <view>购物车</view>
+  </navigator>
+  <view class="tool_item btn_car" bindtap="model"
+  data-judge="AddCar">
+    <view>加入购物车</view>
+  </view>
+  <view class="tool_item btn_buy" bindtap="model"
+  data-judge="Impay">
+    <view>立即购买</view>
+  </view>
+</view>
+<!-- 底部弹出框 -->
+<view class="commodity" bindtap="hindModel" 
+hidden="{{Model}}">
+</view>
+  <view animation="{{animationData}}" class="model" hidden="{{Model}}">
+  <scroll-view scroll-y class="roll">  
+    <view class="goodsinfo">
+      <view><image src="{{goods.small_img}}"></image></view>
+      <view class="name">{{goods.name}}</view>
+    </view>
+    <view class="color">
+      <view class="color_title">颜色</view>
+      <view class="colorItem">
+        <view class="item {{item.isActive?'isActived':''}}"
+        wx:for="{{color}}"
+        wx:key="id"
+        bindtap="checkColor"
+        data-colorId="{{item.id}}"
+        >{{item.colorItem}}</view>
+      </view>
+    </view>
+    <view class="num">
+      <view>购买数量</view>
+      <view class="changeNum">
+        <view class="add" bindtap="editNum" data-operation="{{-1}}">-</view>
+        <view class="count">{{goods.num}}</view>
+        <view class="add" bindtap="editNum" data-operation="{{1}}">+</view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="ok" bindtap="{{judge}}">确定</view>
+</view>

@@ -1,0 +1,16 @@
+<view class="collected_list">
+  <navigator class="goods"
+  wx:for="{{collected}}"
+  wx:key="gid"
+  url="/pages/detail/detial?gid={{item.gid}}"
+  >
+    <view class="goods_img">
+    <image mode="widthFix" src="{{item.small_img}}"></image>
+    </view>
+    <view class="goods_details">
+      <view class="goods_name">{{item.name}}</view>
+      <text>\n</text>
+      <view class="goods_price">${{item.price}}</view>
+    </view>
+  </navigator>
+</view>

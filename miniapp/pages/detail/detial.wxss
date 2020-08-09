@@ -1,0 +1,174 @@
+page{
+  padding-bottom: 90rpx;
+}
+swiper{
+  height: 600rpx;
+  width: 100%;
+}
+.goods_price{
+  padding: 15rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: red;
+}
+.goods_row{
+  display: flex;
+  border-top: 5rpx solid #ccc;
+  border-bottom: 5rpx solid #ccc;
+  padding: 10rpx 0;
+}
+.goods_row .goods_name{
+  flex: 5;
+  color: black;
+  padding: 0 10rpx;
+  font-size: 40rpx;
+}
+.goods_row .collect{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1rpx solid black;
+}
+.icon-shoucang{
+  color: red;
+}
+.buttom_tool{
+  position:  fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  border-top: 1rpx solid #ccc;
+}
+.buttom_tool .tool_item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.tool_item button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.btn_car{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: orange;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.btn_buy{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: red;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.commodity{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  color: #fff;
+}
+.model{
+  height: 750rpx;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  padding: 20rpx;
+  padding-bottom: 120rpx;
+  z-index: 100;
+}
+.goodsinfo image{
+  height: 100rpx;
+  width: 100rpx;
+  flex: 5;
+}
+.goodsinfo,.num{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10rpx;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid gainsboro;
+}
+.goodsinfo .namw{
+  flex: 5;
+}
+.color{
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid gainsboro;
+}
+.color_title{
+  margin: 10rpx 0;
+}
+.colorItem{
+  display: flex;
+}
+.item{
+  width: 150rpx;
+  background-color: gainsboro;
+  border-radius: 15rpx;
+  margin: 0 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.isActived{
+  border: 1rpx solid red;
+  color: red;
+}
+.changeNum{
+  display: flex;
+  padding-right: 20rpx;
+}
+.add,.count{
+  width: 40rpx;
+  margin: 0 1rpx;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ok{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100rpx;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  background-color: red;
+  color: #fff;
+  display: flex;
+  border-radius: 45rpx;
+  justify-content: center;
+  align-items: center;
+}
+.roll{
+  height: 100%;
+}

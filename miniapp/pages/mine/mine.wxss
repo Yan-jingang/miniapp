@@ -1,0 +1,135 @@
+page{
+  background-color: gainsboro;
+}
+.set{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  display: flex;
+  padding: 10rpx 15rpx;
+}
+.icon-shezhi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user_info{
+  height: 40vh;
+  overflow: hidden;
+  position: relative;
+}
+.big_img{
+  height: 40vh;
+  filter: 5rpx;
+}
+.user_img{
+  position: relative;
+}
+.user{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  text-align: center;
+}
+.user_icon{
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+}
+.user_name{
+  font-size: 40rpx;
+  margin-top: 40rpx;
+  color: white;
+}
+.btn{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  border: 1rpx solid gray;
+  height: 80rpx;
+  width: 400rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 40rpx;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}
+.mine_content{
+  position: relative;
+}
+.main{
+  color:gray;
+  padding-bottom: 50rpx;
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);  
+}
+.history{
+  background-color: white;
+  display: flex;
+}
+.history navigator{
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 0;
+}
+.num{
+  color: red;
+}
+.order{
+  margin-top: 30rpx;
+  background-color: white;
+}
+.order_title{
+  padding: 20rpx;
+  border-bottom: 1rpx solid gainsboro;
+}
+.order_content{
+  display: flex;
+}
+.order_content navigator{
+  flex: 1;
+  text-align: center;
+  padding: 15rpx 0;
+}
+
+.order_content .iconfont{
+  color: red;
+  font-size: 40rpx;
+}
+.share{
+  margin-top: 30rpx;
+  background: #fff;
+  position: relative;
+  padding: 20rpx;
+  height: 90rpx;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.share button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.info_item{
+  position: relative;
+}
+.info_item button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}

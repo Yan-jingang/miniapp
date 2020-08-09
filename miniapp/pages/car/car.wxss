@@ -1,0 +1,147 @@
+page{
+  padding-bottom: 90rpx;
+}
+
+.btn_address{
+  padding: 20rpx;
+}
+.btn_address button{
+  width: 60%;
+}
+.userDetail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20rpx;
+}
+.userDetail .userName{
+  flex: 5;
+}
+.userName{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userDetail .address{
+  flex: 3;
+  text-align: left;
+}
+.car_title{
+  padding: 20rpx;
+  font-size: 36rpx;
+  color: red;
+  border-top: 1rpx solid currentColor;
+  border-bottom: 1rpx solid currentColor;
+}
+.car_content .car_item{
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1rpx solid black;
+}
+.car_item .check{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.car_item .goods_img{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods_img image{
+  width: 80%;
+}
+.car_item .goods_info{
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.goods_info .goods_name{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #666;
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+}
+.price .goods_price{
+  color: red;
+  font-size: 34rpx;
+}
+.price .goods_count{
+  display: flex;
+}
+.goods_count .add{
+  display: flex;
+  width: 55rpx;
+  height: 55rpx;
+  justify-content: center;
+  align-items: center;
+  border: 1rpx solid #ccc;
+}
+.goods_count .count{
+  display: flex;
+  width: 55rpx;
+  height: 55rpx;
+  justify-content: center;
+  align-items: center;
+}
+.bottom_tool{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: white;
+  display: flex;
+  border-bottom: 1rpx solid black;
+}
+.bottom_tool .allchecked{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom_tool .total_price{
+  flex: 5;
+  text-align: right;
+  padding-right: 15rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.total_price .price text{
+  color: red;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.bottom_tool .pay{
+  flex: 3;
+  background-color: red;
+  color: white;
+  font-size: 32rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+checkbox .wx-checkbox-input{
+  border-radius: 50%;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+  border-radius: 50%;
+  border: 1rpx solid red;
+  background-color: red;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  border-radius: 50%;
+  border: 1rpx solid red;
+  background-color: red;
+  color: #fff;
+}

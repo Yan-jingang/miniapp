@@ -1,0 +1,17 @@
+<view>
+<view class="address" bindtap="Addaddress">
+      管理收货地址
+</view>
+<view class="shopInfo">
+  <view class="info_item contant">
+    <text>联系客服</text>
+    <text>181-3446-2191</text>
+  </view>
+  <view class="info_item feedback">
+    <view>意见反馈</view>
+    <button open-type="feedback"></button>
+  </view>
+  <view class="info_item">关于我们</view>
+</view>
+<view class="exit" bindtap="exit">退出登录</view>
+</view>

@@ -1,0 +1,61 @@
+<!-- 主体 -->
+<view class="car">
+  <view class="car_title">购物车</view>
+  <view class="car_content">
+    <!-- 当购物车有商品时显示商品 没有商品时提醒用户添加商品 -->
+    <block wx:if="{{car.length!=0}}">
+    <view class="car_item"
+    wx:for="{{car}}"
+    wx:key="gid"
+    bindlongpress="delete"
+    data-delete_gid="{{item.gid}}"
+    >
+      <view class="check">
+        <checkbox-group bindchange="itemCheckchange"
+        data-gid="{{item.gid}}"
+        >
+          <checkbox checked="{{item.checked}}">
+          </checkbox>
+        </checkbox-group>
+      </view>
+      <navigator class="goods_img"
+      url="/pages/detail/detial?gid={{item.gid}}"
+      >
+        <image mode="widthFix" src="{{item.small_img}}"></image>
+      </navigator>
+      <view class="goods_info">
+        <view class="goods_name">{{item.name}}</view>
+        <view class="price">
+          <view class="goods_price">
+          ￥ {{item.price}}
+          </view>
+          <view class="goods_count">
+            <view class="add" bindtap="editNum" data-gid="{{item.gid}}" data-operation="{{-1}}">-</view>
+            <view class="count">{{item.num}}</view>
+            <view class="add" bindtap="editNum" data-gid="{{item.gid}}" data-operation="{{1}}">+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    </block>
+    <block wx:else>
+      <image mode="widthFix" src="https://s1.ax1x.com/2020/06/01/t82pNV.png"></image>
+    </block>
+  </view>
+</view>
+<!-- 底部 -->
+<view class="bottom_tool">
+  <view class="allchecked">
+    <checkbox-group bindchange="AllchexkedChange">
+      <checkbox checked="{{Allchecked}}">全选</checkbox>
+    </checkbox-group>
+  </view>
+  <view class="total_price">
+    <view class="price">
+      合计:<text>￥ {{totalPrice}}</text>
+    </view>
+  </view>
+  <view class="pay" bindtap="pay">
+    结算({{totalnum}})
+  </view>
+</view>

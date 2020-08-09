@@ -1,0 +1,21 @@
+.dianwo{
+  height: 100rpx;
+  width: 100%;
+  border-bottom: 1rpx solid black;
+}
+.item{
+  height: 300rpx;
+  width: 100%;
+  display: flex;
+  border-bottom: 1rpx solid black;
+}
+.check{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+  flex: 8;
+  background-color: red;
+}

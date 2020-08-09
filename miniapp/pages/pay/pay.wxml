@@ -1,0 +1,52 @@
+<view class="receive_address">
+  <view class="btn_address" wx:if="{{!addressinfo.name}}">
+    <button bindtap="Addaddress" type="primary" plain>添加收货地址</button>
+  </view>
+  <view 
+  wx:else class="userDetail"
+  bindtap="Addaddress"
+  >
+    <view class="userName">
+      <view>{{addressinfo.name}}</view>
+      <view>{{addressinfo.phonenum}}</view>
+    </view>
+    <view class="address">
+      <view>{{addressinfo.useraddress}}</view>
+    </view>
+  </view>
+</view>
+<!-- 主体 -->
+<view class="paycar">
+  <view class="paycar_content">
+    <view class="paycar_item"
+    wx:for="{{paycar}}"
+    wx:key="gid"
+    >
+      <navigator class="goods_img">
+        <image mode="widthFix" src="{{item.small_img}}"></image>
+      </navigator>
+      <view class="goods_info">
+        <view class="goods_name">{{item.name}}</view>
+        <view class="price">
+          <view class="goods_price">
+          ￥ {{item.price}}
+          </view>
+          <view class="goods_count">
+            <view class="count">X{{item.num}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 底部 -->
+<view class="bottom_tool">
+  <view class="total_price">
+    <view class="price">
+      合计:<text>￥ {{totalPrice}}</text>
+    </view>
+  </view>
+  <view class="pay" bindtap="pay" data-imlen="{{imlen}}">
+    支付({{totalnum}})
+  </view>
+</view>

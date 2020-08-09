@@ -1,0 +1,25 @@
+<view>
+  <view class="address_content"
+  wx:for="{{addressinfos}}"
+  wx:for-item="item"
+  wx:for-index="index"
+  wx:key="name"
+  >
+    <view bindtap="{{judgeorigin==1?'chooseIndex':''}}" data-index="{{index}}">
+      <view class="userName">
+        <view>{{item.name}}</view>
+        <view>{{item.phonenum}}</view>
+      </view>
+      <view class="address">
+        <view>{{item.useraddress}}</view>
+      </view>
+    </view>
+  </view>
+  <view>
+    <view
+    class="btn_address"
+    bindtap="Addaddress">
+    添加收获地址
+    </view> 
+  </view>
+</view>

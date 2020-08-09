@@ -1,0 +1,44 @@
+<view class="history">
+  <view class="title">
+    <view class="title_content">共{{history.length}}条历史纪录</view>
+    <view class="icon" bindtap="dianji">{{edit?'编辑':'完成'}}</view>
+  </view>
+  <view class="content">
+    <view class="history_item"
+    wx:for="{{history}}"
+    wx:key="gid"
+    >
+      <view class="check"
+      hidden="{{edit}}">
+        <checkbox-group bindchange="itemCheckchange"
+        data-gid="{{item.gid}}"
+        >
+          <checkbox checked="{{item.checked}}">
+          </checkbox>
+        </checkbox-group>
+      </view>
+      <navigator class="history_goods"
+      url="/pages/detail/detial?gid={{item.gid}}"
+      >
+        <view class="goods_img">
+          <image mode="widthFix" src="{{item.small_img}}"></image>
+        </view>
+        <view class="goods_info">
+          <view class="goods_name">{{item.name}}</view>
+          <view class="price">￥ {{item.price}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="bottom"
+  hidden="{{edit}}">
+    <view class="Allcheck">
+      <checkbox-group bindchange="AllchexkedChange">
+        <checkbox checked="{{Allchecked}}">全选</checkbox>
+      </checkbox-group>
+    </view>
+    <view class="delete" bindtap="delete">
+    删除
+    </view>
+  </view>
+</view>

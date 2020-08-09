@@ -1,0 +1,50 @@
+page{
+  background-color: gainsboro;
+  padding: 20rpx;
+}
+
+.search{
+  height: 90rpx;
+  display: flex;
+}
+input{
+  flex: 1;
+  background-color: white;
+  height: 100%;
+  padding-left: 50rpx;
+}
+.btn{
+  height: 100%;
+  width: 120rpx;
+  font-size: 30rpx;
+  padding: 0;
+  margin: 0 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  border: 1rpx solid white;
+  border-radius: 5rpx;
+}
+.btn button{
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.searchResult{
+  margin-top: 30rpx;
+}
+.result_item{
+  background-color: white;
+  font-size: 30rpx;
+  padding: 15rpx 10rpx;
+  border-bottom: 1rpx solid gainsboro;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

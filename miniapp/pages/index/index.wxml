@@ -1,0 +1,92 @@
+<view class="index">
+  <SearchInput msgList="{{msgList}}"></SearchInput>
+  <swiper autoplay="1000" indicator-dots circular>
+    <swiper-item
+    wx:for="{{swiperList}}"
+    wx:key="gid">
+      <navigator
+      url="/pages/detail/detial?gid={{item.gid}}">
+        <image mode="widthFix"
+        src="{{item.small_img}}"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="daohang">
+  <view class="daohang_item">
+    <navigator
+    url="/pages/classify/classify"
+    open-type="switchTab">
+      <image mode="widthFix" src="https://m.360buyimg.com/mobilecms/s120x120_jfs/t1/98535/20/16481/5760/5e7d646aE9b72c32e/8e063cfb6bad4654.png">
+      </image>
+      <view class="icon_name">全部分类</view>
+    </navigator>
+  </view>
+  <view class="daohang_item">
+    <navigator
+    url="/pages/goodlists/goodlists?tid=30&tstype=女童套装">
+      <image mode="widthFix" src="https://m.360buyimg.com/babel/jfs/t1/32783/1/15308/10861/5cc15ca4Ea45dc5de/2d3a9fd009c571b7.png!q70.webp">
+      </image>
+      <view class="icon_name">女童套装</view>
+    </navigator>
+  </view>
+  <view class="daohang_item">
+    <navigator
+    url="/pages/goodlists/goodlists?tid=105&tstype=淋浴花洒">
+      <image mode="widthFix" src="https://m.360buyimg.com/babel/jfs/t1/112957/28/2257/8543/5ea02037Edd8aef11/f4c422158967975c.png">
+      </image>
+      <view class="icon_name">淋浴花洒</view>
+    </navigator>
+  </view>
+  <view class="daohang_item">
+    <navigator
+    url="/pages/goodlists/goodlists?tid=51&tstype=蜜饯果干">
+      <image mode="widthFix" src="https://m.360buyimg.com/babel/jfs/t1/39576/30/3765/22792/5cc65ca7Efaa4e906/0330555057a371ef.png">
+      </image>
+      <view class="icon_name">蜜饯果干</view>
+    </navigator>
+  </view>
+</view>
+<view class="floor">
+  <view class="contant">
+    <view class="floor_item">
+        <view class="theme">
+          精品女装
+        </view>
+        <view class="theme_item">
+          <navigator
+          url="/pages/goodlists/goodlists?tid=21&tstype=连衣裙">
+            <image
+            mode="widthFix"
+            src="https://shop.io.mi-img.com/app/shop/img?id=shop_b4a426180abc6041ff358881acdada36.jpeg"></image>
+          </navigator>
+        </view>
+        <view class="theme_item">
+          <navigator
+          url="/pages/goodlists/goodlists?tid=22&tstype=女士上衣">
+            <image
+            mode="widthFix" 
+            src="https://shop.io.mi-img.com/app/shop/img?id=shop_215879ada22c62aba6758a0656899ab2.jpeg"></image>
+          </navigator>
+        </view>
+        <view class="theme_item">
+          <navigator
+          url="/pages/goodlists/goodlists?tid=23&tstype=外套">
+            <image 
+            mode="widthFix"
+            src="https://shop.io.mi-img.com/app/shop/img?id=shop_6ca8e64b15be80af99c406107e317ead.jpeg"></image>
+          </navigator>
+        </view>
+        <view class="theme_item">
+          <navigator
+          url="/pages/goodlists/goodlists?tid=24&tstype=裤子">
+            <image 
+            mode="widthFix"
+            src="https://shop.io.mi-img.com/app/shop/img?id=shop_677e7dd3c00a9b12da5f9bc27f12c3f3.jpeg"></image>
+          </navigator>
+        </view>
+    </view>
+  </view>
+</view>
+
+  

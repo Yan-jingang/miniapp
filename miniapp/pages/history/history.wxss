@@ -1,0 +1,103 @@
+page{
+  padding-bottom: 90rpx;
+}
+.history{
+  padding: 0 10rpx;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid gainsboro;
+}
+.title_content{
+  flex: 8;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.icon{
+  flex: 2;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.history_item{
+  height: 250rpx;
+  width: 100%;
+  display: flex;
+}
+.check{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.history_goods{
+  flex: 9;
+  display: flex;
+}
+.goods_img{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods_img image{
+  width: 80%;
+  height: 80%;
+}
+.goods_img{
+  flex: 4;
+}
+.goods_info{
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1rpx solid gainsboro;
+}
+.goods_name{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.price{
+  padding-top: 50rpx;
+  color: red;
+}
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: white;
+}
+.delete,.Allcheck{
+  height: 100%;
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+checkbox .wx-checkbox-input{
+  border-radius: 50%;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+  border-radius: 50%;
+  border: 1rpx solid red;
+  background-color: red;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  border-radius: 50%;
+  border: 1rpx solid red;
+  background-color: red;
+  color: #fff;
+}

@@ -1,0 +1,35 @@
+page{
+  padding-bottom: 90rpx;
+}
+.address_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20rpx;
+  border-bottom: 1rpx solid gainsboro;
+}
+.address_content .userName{
+  flex: 5;
+}
+.userName{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.address_content .address{
+  flex: 3;
+  text-align: left;
+}
+.btn_address{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90rpx;
+  width: 100%;
+  background-color: red;
+  color: white;
+  border-radius: 45rpx;
+}

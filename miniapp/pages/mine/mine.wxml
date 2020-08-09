@@ -1,0 +1,55 @@
+<view class="user_info">
+  <view wx:if="{{userinfo.nickName}}" class="user_img">
+    <view class="set" bindtap="set">
+      <view class="iconfont icon-shezhi">
+      </view>
+      <view>设置</view>
+    </view>  
+    <image class="big_img" src="{{userinfo.avatarUrl}}"></image>
+    <view class="user">
+      <image class="user_icon" src="{{userinfo.avatarUrl}}"></image>
+      <view class="user_name">{{userinfo.nickName}}</view>
+    </view>
+  </view>
+  <view wx:else class="btn">
+    <navigator url="/pages/login/login">登录
+    </navigator>
+  </view>
+</view>
+<view class="mine_content">
+  <view class="main">
+    <view class="history">
+      <navigator url="/pages/collect/collect">
+        <view class="num">{{collectedNum}}</view>
+        <view class="name">商品收藏</view>
+      </navigator>
+      <navigator url="/pages/history/history">
+        <view class="num">{{historyNum}}</view>
+        <view class="name">我的足迹</view>
+      </navigator>
+    </view>
+    <view class="order">
+      <view class="order_title">我的订单</view>
+      <view class="order_content">
+        <navigator url="/pages/order/order">
+          <view class="iconfont icon-dingdan"></view>
+          <view class="order_name">全部订单</view>
+        </navigator>
+        <navigator
+        open-type="switchTab"
+        url="/pages/car/car">
+          <view class="iconfont icon-dingdan"></view>
+          <view class="order_name">待付款</view>
+        </navigator>
+        <navigator>
+          <view class="iconfont icon-dingdan"></view>
+          <view class="order_name">待收货</view>
+        </navigator>
+      </view>
+    </view>
+      <view class="share">
+        <view>分享</view> 
+        <button open-type="share"></button>
+      </view>
+    </view>
+</view>

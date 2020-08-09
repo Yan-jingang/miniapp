@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/goodlists/goodlists",
+    "pages/classify/classify",
+    "pages/car/car",
+    "pages/detail/detial",
+    "pages/collect/collect",
+    "pages/order/order",
+    "pages/search/search",
+    "pages/mine/mine",
+    "pages/auth/auth",
+    "pages/feedback/feedback",
+    "pages/login/login",
+    "pages/pay/pay",
+    "pages/history/history",
+    "pages/address/address",
+    "pages/editaddress/editaddress",
+    "pages/set/set"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ff0000",
+    "navigationBarTitleText": "购物商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#ff0000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/首页.png",
+        "selectedIconPath": "img/首页-选中.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "img/分类.png",
+        "selectedIconPath": "img/分类-选中.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "购物车",
+        "iconPath": "img/购物车.png",
+        "selectedIconPath": "img/购物车-选中.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心",
+        "iconPath": "img/个人中心.png",
+        "selectedIconPath": "img/个人中心-选中.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,18 @@
+<view class="search_input">
+    <swiper class="contain"
+    vertical="true"
+    autoplay="true"
+    circular="true"  
+    >
+      <navigator
+      open-type="navigate"
+      wx:for="{{msgList}}"
+      wx:key="title"
+      url="../../pages/search/search?title={{item.title}}" 
+      >
+        <swiper-item>
+          <view class="item">{{item.title}}</view>
+        </swiper-item>
+      </navigator>
+    </swiper>
+</view>

@@ -1,0 +1,66 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+swiper{
+  width: 750rpx;
+  height: 450rpx;
+}
+swiper swiper-item image{
+  width: 100%;
+}
+.daohang{
+  display: flex;
+  padding: 20rpx 0;
+}
+.daohang_item{
+  flex: 1;
+  padding: 10rpx;
+}
+.icon_name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contant{
+  padding: 0 2rpx 10rpx;
+  border-bottom: 1rpx solid gainsboro;
+}
+.floor_item{
+  padding: 10rpx 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.theme{
+  flex: 2;
+  padding: 0 5rpx;
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  height: 220rpx;
+  border-right: 1rpx solid gainsboro;
+}
+.theme_item{
+  flex: 8;
+  justify-content: center;
+  align-items: center;
+  height: 220rpx;
+}
+

@@ -1,0 +1,33 @@
+<form bindsubmit="getinfo">
+  <view class="getname">
+    <view class="label">收货人</view>
+    <input 
+    placeholder="姓名" 
+    name="name"></input>
+  </view>
+  <view class="getname">
+    <view class="label">联系方式</view>
+    <input 
+    placeholder="手机号码"
+    type="number"
+    name="phonenum">
+    </input>
+  </view>
+  <view class="getname">
+    <view class="label">收货地址</view>
+    <input 
+    placeholder="请选择" 
+    value="{{address.address}}"
+    bindfocus="{{ len === 0 ? 'Addaddress' : ''}}"
+    name="useraddress">
+    </input>
+    <view class="choose">
+      <view>></view>   
+      <button bindtap="Addaddress"></button>
+    </view> 
+  </view>
+  <view class="submit" bindtap="returnpage">
+    <view class="tip">保存并使用该地址</view>
+    <button form-type="submit"></button>
+  </view>
+</form>
